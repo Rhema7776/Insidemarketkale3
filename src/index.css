@@ -3,32 +3,38 @@
 @tailwind utilities;
 
 
-
+@media screen and (max-width: 768px){
+  .tabs:not(:last-child){
+  border-bottom: 2px solid rgb(232, 230, 230);
+}
+}
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 
   *{
     text-decoration: none !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
   
     
   }
+  /* .MuiTab-root{ color: rgb(216, 68, 9) !important; } */
   li {
     @apply  p-3 
     
   }
-
-  
+  .textField__label{
+    color: #FF6A00 ;
+  }
   
   .page-wrapper{
     background-image: url(./images/bg-1.jpg);
   }
  
-  /* button {
+  button {
     @apply text-white border  bg-orange-600 border-orange-600
     hover:bg-transparent hover:text-orange-600 rounded-md 
-  } */
+  }
   
   .navbar{
     background: transparent;
@@ -91,7 +97,7 @@
   /* for bottom tabs */
   
   /* .tabs:not(:last-child){
-    border-right: 1px solid rgba(0, 0, 0, 0.274);
+    border-bottom: 2px solid rgb(232, 230, 230);
   } */
 
   /* .content-tabs {
