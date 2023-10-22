@@ -31,10 +31,10 @@
     background-image: url(./images/bg-1.jpg);
   }
  
-  button {
+  /* button {
     @apply text-white border  bg-orange-600 border-orange-600
     hover:bg-transparent hover:text-orange-600 rounded-md 
-  }
+  } */
   
   .navbar{
     background: transparent;
@@ -95,14 +95,7 @@
     margin-block-end: 11%;
   }  
   /* for bottom tabs */
-  
-  /* .tabs:not(:last-child){
-    border-bottom: 2px solid rgb(232, 230, 230);
-  } */
 
-  /* .content-tabs {
-    flex-grow: 1;
-  } */
   .content {
     display: none;
   }

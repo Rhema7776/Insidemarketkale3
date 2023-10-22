@@ -8,7 +8,7 @@ import {Testimonials} from '../components/Testimonials'
 import About from '../components/About';
 import Test from '../components/Test';
 import Ourgoal from '../components/Ourgoal';
-
+import FindWhat from '../components/FindWhat';
 export default function Home() {
 
   return (
@@ -17,11 +17,11 @@ export default function Home() {
       <Navbar />
       
       <Hero /> 
-      {/* <Test/> */}
+      
       <About/>
       <Ourgoal/>
       <Howitworks/>
-      
+      <FindWhat />
       <Contacts/>
       {/* <Testimonials/> */}
       <Footer />
