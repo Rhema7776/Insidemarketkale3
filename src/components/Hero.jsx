@@ -21,7 +21,7 @@ function App() {
 
       {/* TAB 1 Contents */}
       {currentTabIndex === 0 && (
-        <Box className="container flex flex-wrap   mx-auto md:px-12 md:flex-row ">
+        <Box className="container flex flex-wrap   mx-auto  md:flex-row ">
           <Box sx={{ p: 0 }} className="lg:w-1/2">
             <Tabs
                 className="container mx-auto mt-10 "
@@ -78,7 +78,7 @@ function App() {
 
       {/* TAB 2 Contents */}
       {currentTabIndex === 1 && (
-        <Box className="container flex flex-wrap justify-center mx-auto  md:px-12 md:flex-row ">
+        <Box className="container flex flex-wrap justify-center mx-auto  md:flex-row ">
             
           <Box sx={{ p: 0 }} className="lg:w-1/2">
 

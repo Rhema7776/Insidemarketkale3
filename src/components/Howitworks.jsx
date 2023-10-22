@@ -20,7 +20,7 @@ const Howitworks = () => {
           Think of it as twitter for e-commerce 
         </p> 
       </div> 
-      <div className="container mx-auto mt-7 flex flex-wrap-reverse  justify-center px-12 ">
+      <div className="container mx-auto mt-7 flex flex-wrap-reverse  justify-center  ">
       <div
     
       className="bloc-tabs grid mt-12   md:grid-cols-3 mx-auto flex-col justify-center border-white-500 border-t-2">

@@ -3,7 +3,7 @@ import featuredicon from "../images/Featured icon.png";
 
 const Ourgoal = () => {
   return (
-    <div className="bg-gray-100 items-center lg:p-20">
+    <div className="bg-gray-100 lg:p-20">
       <div className="container  grid md:grid-cols-2 gap-4 mx-auto flex-col">
       <div>
         <img src={featuredicon} alt="" />
