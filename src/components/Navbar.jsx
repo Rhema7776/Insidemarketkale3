@@ -15,10 +15,9 @@ const Navbar = () => {
   
   
   return (
-    // py-5 h-[80px]  text-16px drop-shadow-sm items-center bg-white sticky top-0 border-b border-gray-100 w-full mx-auto 
-    <nav className=' text-16px drop-shadow-sm  bg-white sticky top-0 border-b border-gray-100 w-full   '>
+    <nav className=' z-10 text-16px bg-white sticky  top-0 drop-shadow-sm border-b border-gray-100 w-full   '>
       <div className='container mx-auto md:px-12 md:flex md:justify-between md:items-center  w-full'>
-      <div className=' flex justify-between items-center   h-full w-full'>
+      <div className=' flex justify-between items-center   h-full w-full '>
             <div className=' items-center'>
              <img src={logo} alt="" className='' />          
             </div>
@@ -56,7 +55,7 @@ const Navbar = () => {
             </div>
         </div>
         <div  className={!nav ? 'hidden ' : 'w-full'}>
-          <hr className="my-8 border-blue-gray-50" />
+          <hr className="my-2 border-blue-gray-50" />
           <ul className='my-4 w-full'>
             <Link to='/Howitworks'>
             <li>How it works</li>
@@ -72,7 +71,8 @@ const Navbar = () => {
             </Link>
               
           </ul>   
-          <hr className="my-8 border-blue-gray-50" /> 
+          <hr className="my-2 border-blue-gray-50" /> 
+        
           <div className='flex   my-4  '> 
             <NavLink to='/' className=' '>
               <button className='border-none bg-transparent mr-4 py-3'>
