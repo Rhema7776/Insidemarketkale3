@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import appstore from "../images/Mobile app store badge.png";
 import playstore from "../images/Mobile app store badge (1).png";
 import { Typography } from '@material-tailwind/react';
-import { Box } from '@mui/material';
+import { Box } from "@material-ui/core";
+
 
 const FindWhat = () => {
   return (

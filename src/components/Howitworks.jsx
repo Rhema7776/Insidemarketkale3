@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Typography } from "@material-ui/core";
 import iphone1 from "../images/Content (7).png";
 import iphone2 from "../images/Content (4).png";
 import iphone3 from "../images/Content (5).png";

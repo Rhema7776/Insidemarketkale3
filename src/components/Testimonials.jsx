@@ -1,15 +1,6 @@
-import { Carousel } from "@material-tailwind/react";
-import iphone1 from "../images/Content (3).png";
-import iphone2 from "../images/Content (4).png";
-import iphone3 from "../images/Content (5).png";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import appstore from "../images/Mobile app store badge (1).png";
-import playstore from "../images/Mobile app store badge.png";
-import {Box} from "@mui/material";
-import { HiAdjustments, HiClipboardList, HiUserCircle } from 'react-icons/hi';
-import { MdDashboard } from 'react-icons/md';
-import img from '../images/Content (1).png'
+
 import {
   Tabs,
   TabsHeader,

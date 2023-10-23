@@ -1,16 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useCountries } from "use-react-countries";
 import {
-  Input,
+
   Menu,
   MenuHandler,
   MenuList,
   MenuItem,
   Button,
-  Card,
   Checkbox,
   Typography,
-  Box,
+
 } from "@material-tailwind/react";
 import phone from "../images/Icon (1).png";
 import mail from "../images/Icon.png";
@@ -21,21 +20,7 @@ const Contacts = () => {
   const { name, flags, countryCallingCode } = countries[country];
 
   
-  const [person, setPerson] = useState({
-    Name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
-  const [people, setPeople] = useState([]);
-
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setPerson({ ...person, [name]: value });
-  };
   const handleSubmit = (e) => {
-  
     e.preventDefault();
     
   };
@@ -89,11 +74,6 @@ const Contacts = () => {
               </Typography>
               <input
                 type="text"
-                id="Name"
-                name="Name"
-                value={person.Name}
-                onChange={handleChange}
-                
                 size="lg"
                 placeholder="Your name"
                 className=" border border-gray-300 rounded-lg text-sm w-full "
@@ -105,7 +85,6 @@ const Contacts = () => {
                     Phone
                   </Typography>
 
-                  {/* country input */}
                   <div className="relative flex w-full  ">
                     <Menu placement="bottom-start">
                       <MenuHandler>
@@ -150,10 +129,6 @@ const Contacts = () => {
                     </Menu>
                     <input
                       type="tel"
-                      id="phone"
-                      name="phone"
-                      value={person.phone}
-                      onChange={handleChange}
                       placeholder="Mobile Number"
                       className="rounded-r-md h-10 border-l-0 xs:w-full sm:w-full md:w-30 lg:w-30 border border-gray-300 text-sm text-gray-500 "
                       labelProps={{
@@ -164,7 +139,8 @@ const Contacts = () => {
                       }}
                     />
                   </div>
-                  {/* country input */}
+                  
+
                 </div>
                 <div className="lg:w1/2">
                   <Typography variant="h6" color="blue-gray" className="">
@@ -172,10 +148,6 @@ const Contacts = () => {
                   </Typography>
                   <input
                     type="text"
-                    id="email"
-                    name="email"
-                    value={person.email}
-                    onChange={handleChange}
                     size="lg"
                     placeholder="name@mail.com"
                     className="h-10 rounded-lg border border-gray-300 text-sm w-full "
@@ -201,10 +173,6 @@ const Contacts = () => {
               Your message
             </label>
             <textarea
-              id="message"
-              name='message' 
-              value={person.message}
-              onChange={handleChange}
               rows="4"
               class="mb-3 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Leave a comment..."
@@ -228,20 +196,10 @@ const Contacts = () => {
               }
               containerProps={{ className: "pr-3" }}
             />
-            <Button type='submit'  onSubmit={handleSubmit} className="mt-6 capitalize bg-orange-500" fullWidth>
+            <Button type='submit'   className="mt-6 capitalize bg-orange-500" fullWidth>
               Send message
-            </Button>
-            
-            {people.map((person) => {
-                    const {id, firstName, email,age} = person;
-                    return(
-                        <div className='item animate__animated  animate__backInDown '  key={id}>
-                            <h4>{firstName}</h4>
-                            <p>{email}</p>
-                            <p>{age}</p>
-                        </div>
-                    );
-                })}
+            </Button> 
+           
           </form>
         </div>
       </div>

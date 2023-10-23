@@ -1,13 +1,11 @@
-import React, {useState, useContext} from 'react'
+import React, {useState} from 'react'
 import logo from '../images/Frame 1000001585.png' 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import {NavLink, Link} from 'react-router-dom';
-import { Button } from 'flowbite-react';
+import {NavLink} from 'react-router-dom';
 import appstore from '../images/Mobile app store badge.png';
 import playstore from '../images/Mobile app store badge (1).png';
-import Scroll from 'react-scroll';
 import { Typography } from '@material-tailwind/react';
-import { div } from '@mui/material';
+
 
 
 

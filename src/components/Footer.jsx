@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from "../images/Frame 1000001585.png"
-import { Typography , div} from '@material-tailwind/react';
+import { Typography } from '@material-tailwind/react';
 import appstore from '../images/Mobile app store badge.png';
 import playstore from '../images/Mobile app store badge (1).png';
-import {Link} from 'react-router-dom';
+
 
 const Footer = () => {
   return (

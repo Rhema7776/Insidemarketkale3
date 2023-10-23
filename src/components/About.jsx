@@ -1,6 +1,6 @@
 import React from "react";
 import ladyholdsphone from "../images/Content.png";
-import { Box } from "@mui/material";
+import { Box } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import playstore from "../images/Mobile app store badge (1).png";
 import appstore from "../images/Mobile app store badge.png";
