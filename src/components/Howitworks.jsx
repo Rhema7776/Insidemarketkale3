@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography } from "@material-ui/core";
+import {Typography } from "@material-tailwind/react";
 import iphone1 from "../images/Content (7).png";
 import iphone2 from "../images/Content (4).png";
 import iphone3 from "../images/Content (5).png";
@@ -13,18 +13,18 @@ const Howitworks = () => {
   };
 
   return (
-    <Box id='howitworks' className="py-20">
-      <Box className="text-center ">
+    <div id='howitworks' className="py-20">
+      <div className="text-center ">
         <h1 className="font-extrabold text-4xl ">How it Works</h1>
         <Typography className="text-gray-400 text-sm">
           Think of it as twitter for e-commerce 
         </Typography> 
-      </Box> 
-      <Box className="container mx-auto mt-7 flex flex-wrap-reverse  justify-center xs:max-lg:px-3 ">
-      <Box
+      </div> 
+      <div className="container mx-auto mt-7 flex flex-wrap-reverse  justify-center xs:max-lg:px-3 ">
+      <div
     
       className="bloc-tabs grid mt-12   md:grid-cols-3 mx-auto flex-col justify-center border-white-500 border-t-2 ">
-            <Box
+            <div
             className={
                 toggleState === 1
                 ? "tabs md:relative bottom-[2px] xs:hover:bg-orange-100 border-orange-500 border-t-2  border-solid pt-4 text-center"
@@ -34,8 +34,8 @@ const Howitworks = () => {
             >
             <h1 className="font-bold">Post your requests</h1>
             <Typography className="font-thin text-sm text-gray-500 max-w-md">Post what you want to buy, whether in text, images or voice.</Typography>
-            </Box>
-            <Box
+            </div>
+            <div
             className={
                 toggleState === 2
                 ? "tabs relative bottom-[2px] xs:hover:bg-orange-100  border-orange-500 border-t-2 border-solid text-center pt-4"
@@ -47,8 +47,8 @@ const Howitworks = () => {
             <Typography className="font-thin text-sm text-gray-500">
                 Within minutes, sellers Respond to your posts and give you offers.
             </Typography>
-            </Box>
-            <Box
+            </div>
+            <div
             className={
                 toggleState === 3
                 ? "tabs relative bottom-[2px] xs:hover:bg-orange-100 border-t-2 border-t-orange-500 border-solid text-center pt-4"
@@ -61,11 +61,11 @@ const Howitworks = () => {
                 Connect with your chosen seller, chat, negotiate, and finalize deals
                 within the app.
             </Typography>
-            </Box>
-        </Box>
+            </div>
+        </div>
 
-      <Box className="content-tabs  items-center ">
-        <Box
+      <div className="content-tabs  items-center ">
+        <div
           className={
             toggleState === 1
               ? "content active-content border-orange-500 border-t-6 text-center"
@@ -73,23 +73,23 @@ const Howitworks = () => {
           }
         >
           <img  src={iphone1} alt="" />
-        </Box>
-        <Box
+        </div>
+        <div
           className={toggleState === 2 ? "content active-content" : "content items-center "}
         >
           <img src={iphone2} alt="" />
-        </Box>
+        </div>
 
-        <Box
+        <div
           className={toggleState === 3 ? "content active-content" : "content items-center "}
         >
           <img src={iphone3} alt="" />
-        </Box>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </div>
 
 
-    </Box>
+    </div>
   )
 }
 

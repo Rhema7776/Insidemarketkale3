@@ -9,6 +9,7 @@ import { Typography } from '@material-tailwind/react';
 
 
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   

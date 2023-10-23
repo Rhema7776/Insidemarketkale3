@@ -1,6 +1,6 @@
 import React from "react";
 import featuredicon from "../images/Featured icon.png";
-import {div} from "@material-tailwind/react";
+
 
 const Ourgoal = () => {
   return (

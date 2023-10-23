@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography } from "@material-ui/core";
+import {Typography } from "@material-tailwind/react";
 import iphone1 from "../images/Content (1).png";
 import iphone2 from "../images/Content (2).png";
 import playstore from "../images/Mobile app store badge.png";
@@ -33,12 +33,12 @@ const Hero = () => {
   ];
 
   return (
-    <Box id="" className="py-13">
-      <Box className="container mx-auto grid    md:grid-cols-2 flex-col justify-between  xs:max-lg:px-3  ">
-        <Box className="">
+    <div id="" className="py-13">
+      <div className="container mx-auto grid    md:grid-cols-2 flex-col justify-between  xs:max-lg:px-3  ">
+        <div className="">
          
-          <Box className=" border-b-2 mt-20  flex flex-wrap   border-white-500 xs:max-sm:max-w-[90%] sm:max-md:max-w-[43%] md:max-lg:max-w-[72%] lg:max-xl:max-w-[60%] xl:max-w-[48%] pb-3">
-            <Box
+          <div className=" border-b-2 mt-20  flex flex-wrap   border-white-500 xs:max-sm:max-w-[90%] sm:max-md:max-w-[43%] md:max-lg:max-w-[72%] lg:max-xl:max-w-[60%] xl:max-w-[48%] pb-3">
+            <div
               className={
                 toggleState === 1
                   ? "tab relative top-[13px] border-orange-500 border-b-2  border-solid  xl:pt-0  "
@@ -47,8 +47,8 @@ const Hero = () => {
               onMouseEnter={() => toggleTab(1)}
             >
               <p as="p" className=" text-sm text-gray-700  xs:max-lg:text-xs hover:text-orange-500 font-bold ">For buyers</p>
-            </Box>
-            <Box
+            </div>
+            <div
               className={
                 toggleState === 2
                   ? "tab relative top-[13px]  border-orange-500 border-b-2 text-center border-solid pt-0"
@@ -58,11 +58,11 @@ const Hero = () => {
             >
               <p as="p" className=" text-sm xs:max-lg:text-xs hover:text-orange-500 ml-5 font-bold text-gray-700">For sellers and service providers</p>
               
-            </Box>
-          </Box>
+            </div>
+          </div>
 
-          <Box className="content-tab  items-center mt-4">
-            <Box
+          <div className="content-tab  items-center mt-4">
+            <div
               className={
                 toggleState === 1
                   ? "content active-content "
@@ -77,7 +77,7 @@ const Hero = () => {
                 know where to start looking?InsideMarket is here to simplify your
                 search and make your buying and service-seeking experience hassle-free.
               </Typography>
-              <Box className="flex  mt-10  md:flex">
+              <div className="flex  mt-10  md:flex">
                 <Link to="/" className=" ">
                   <button className="border-none mr-4">
                   <img src={appstore} alt="" />
@@ -88,9 +88,9 @@ const Hero = () => {
                   <img src={playstore} alt="" />
                   </button>
                 </Link>
-              </Box>              
-            </Box>
-            <Box
+              </div>              
+            </div>
+            <div
               className={
                 toggleState === 2
                   ? "content active-content"
@@ -105,7 +105,7 @@ const Hero = () => {
                 Ready-to-pay customers for your product or service. Install the
                 app to get started!
               </Typography>
-              <Box className="flex  mt-10  md:flex">
+              <div className="flex  mt-10  md:flex">
                 <Link to="/" className=" ">
                   <button className="border-none mr-4">
                   <img src={appstore} alt="" />
@@ -116,12 +116,12 @@ const Hero = () => {
                   <img src={playstore} alt="" />
                   </button>
                 </Link>
-              </Box> 
-            </Box>
+              </div> 
+            </div>
             
             
-          </Box>
-        </Box>
+          </div>
+        </div>
 
         
         <div className="content-tab  items-center ">
@@ -140,8 +140,8 @@ const Hero = () => {
           <img src={iphone2} alt="" className="w-full" />
         </div>
       </div>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 

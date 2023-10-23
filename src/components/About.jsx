@@ -1,6 +1,5 @@
 import React from "react";
 import ladyholdsphone from "../images/Content.png";
-import { Box } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import playstore from "../images/Mobile app store badge (1).png";
 import appstore from "../images/Mobile app store badge.png";
@@ -40,7 +39,7 @@ const About = () => {
               measures to verify our sellers and protect your information.
             </p>
           </div>
-          <Box className="flex  mt-10  md:flex">
+          <div className="flex  mt-10  md:flex">
             <Link to="/" className=" ">
               <button className="border-none mr-4">
                 <img src={appstore} alt="" />
@@ -51,7 +50,7 @@ const About = () => {
                 <img src={playstore} alt="" />
               </button>
             </Link>
-          </Box>
+          </div>
         </div>
 
         <img src={ladyholdsphone} alt="" />

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import appstore from "../images/Mobile app store badge.png";
 import playstore from "../images/Mobile app store badge (1).png";
 import { Typography } from '@material-tailwind/react';
-import { Box } from "@material-ui/core";
+
 
 
 const FindWhat = () => {
@@ -14,7 +14,7 @@ const FindWhat = () => {
         <img src={Emmanuella} alt="" className='lg:w1/2 ' />
         <div className='flex items-center lg:w1/2'>
             
-          <Box>
+          <div>
             <div className='items-center'>
               <Typography className="font-bold  text-4xl ">
                 Find what you need on InsideMarket
@@ -38,7 +38,7 @@ const FindWhat = () => {
               </Link>
                 
             </div>   
-          </Box>  
+          </div>  
             
         </div>
       </div>
