@@ -7,22 +7,24 @@ import appstore from '../images/Mobile app store badge.png';
 import playstore from '../images/Mobile app store badge (1).png';
 import Scroll from 'react-scroll';
 import { Typography } from '@material-tailwind/react';
+import { div } from '@mui/material';
 
-const ScrollLink = Scroll.ScrollLink
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
+  
   const handleClick = () => setNav(!nav)
   
   
   return (
-    <nav className=' z-10 text-16px bg-white sticky  top-0 drop-shadow-sm border-b border-gray-100 w-full xs:py-3  '>
-      <div className='container mx-auto md:flex md:justify-between md:items-center  w-full'>
+    <nav className='container mx-auto z-10 text-16px bg-white sticky  top-0 drop-shadow-sm  w-full xs:py-3  '>
+      <div className=' md:flex md:justify-between md:items-center  w-full'>
       <div className=' flex justify-between items-center   h-full w-full '>
             <div className=' items-center'>
              <img src={logo} alt="" className='xs:ml-3 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 3xl:ml-0' />          
             </div>
-            <ul className='hidden  md:flex justify-between w-96 text-sm'>
+            <ul className='hidden xs:max-lg:w-80    md:flex justify-between  w-96 text-sm'>
            
               <li>
                   <Typography
@@ -30,6 +32,7 @@ const Navbar = () => {
                     href="#howitworks"
                     color="blue-gray"
                     className="font-normal text-sm transition-colors hover:text-orange-500 focus:text-orangee-500 decoration-slate-400"
+                    
                   >
                     How it works
                   </Typography>
@@ -67,7 +70,7 @@ const Navbar = () => {
               
               
             </ul>
-            <div className='hidden md:flex '> 
+            <div className='hidden xs:max-lg:w-40  md:flex '> 
                 <NavLink to='/' className=' '>
                   <button className='border-none bg-transparent mr-4 py-3'>
                     <img src={appstore} alt="" />
