@@ -36,13 +36,12 @@ function App() {
                 }}
                 InputLabelProps={{
                   className: "textField__label"
-                  // sx: {color: "#FF6A00"}
+                  
                 }}
             
                 start>
                 
                 <Tab
-                // style={ currentTabIndex ? {textDecorationColor :'#FF6A00'} : null } 
                  className="text-xs " sx={{ textTransform: "none" }} label="For buyers" />
                 <Tab className="text-xs" sx={{ textTransform: "none", }} label="For Sellers and Service Providers" /> 
             </Tabs>

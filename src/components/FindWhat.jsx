@@ -11,7 +11,7 @@ const FindWhat = () => {
     <div className=''>
       <div className=' grid md:grid-cols-2 gap-8 container mx-auto  '>
         <img src={Emmanuella} alt="" className='lg:w1/2 ' />
-        <div className='bg-pink-200 flex items-center lg:w1/2'>
+        <div className='flex items-center lg:w1/2'>
             
           <Box>
             <div className='items-center'>
