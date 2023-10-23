@@ -5,7 +5,8 @@ import {NavLink, Link} from 'react-router-dom';
 import { Button } from 'flowbite-react';
 import appstore from '../images/Mobile app store badge.png';
 import playstore from '../images/Mobile app store badge (1).png';
-import Scroll from 'react-scroll'
+import Scroll from 'react-scroll';
+import { Typography } from '@material-tailwind/react';
 
 const ScrollLink = Scroll.ScrollLink
 
@@ -15,27 +16,57 @@ const Navbar = () => {
   
   
   return (
-    <nav className=' z-10 text-16px bg-white sticky  top-0 drop-shadow-sm border-b border-gray-100 w-full   '>
+    <nav className=' z-10 text-16px bg-white sticky  top-0 drop-shadow-sm border-b border-gray-100 w-full xs:py-3  '>
       <div className='container mx-auto md:flex md:justify-between md:items-center  w-full'>
       <div className=' flex justify-between items-center   h-full w-full '>
             <div className=' items-center'>
-             <img src={logo} alt="" className='' />          
+             <img src={logo} alt="" className='xs:ml-3 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 3xl:ml-0' />          
             </div>
-            <div className='hidden  md:flex justify-between w-96 text-sm'>
+            <ul className='hidden  md:flex justify-between w-96 text-sm'>
+           
+              <li>
+                  <Typography
+                    as="a"
+                    href="#howitworks"
+                    color="blue-gray"
+                    className="font-normal text-sm transition-colors hover:text-orange-500 focus:text-orangee-500 decoration-slate-400"
+                  >
+                    How it works
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    as="a"
+                    href="#about"
+                    color="blue-gray"
+                    className="font-normal text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+                  >
+                    About us
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    as="a"
+                    href="#testimonials"
+                    color="blue-gray"
+                    className="font-normal text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+                  >
+                    Testimonials
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    as="a"
+                    href="#contacts"
+                    color="blue-gray"
+                    className="font-normal text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+                  >
+                    Contacts
+                  </Typography>
+                </li>
               
-              <a href='#howitworks' >How it works</a>
-                  
               
-              <a href='#howitworks'>About us</a>
-             
-              
-              <a href='#howitworks'>Testimonials</a>
-              
-             
-              <a href='#contacts'>Contacts</a>
-              
-              
-            </div>
+            </ul>
             <div className='hidden md:flex '> 
                 <NavLink to='/' className=' '>
                   <button className='border-none bg-transparent mr-4 py-3'>
@@ -50,30 +81,59 @@ const Navbar = () => {
                 
             </div>
             <div className='md:hidden ' onClick={handleClick}>
-              {!nav ? <MenuIcon className='w-5 ' /> : <XIcon className='w-5' />}
+              {!nav ? <MenuIcon className='w-5 xs:mr-3 ' /> : <XIcon className='w-5 xs:mr-3' />}
                 
             </div>
         </div>
-        <div  className={!nav ? 'hidden ' : 'w-full'}>
+        <div  className={!nav ? 'hidden ' : 'w-full '}>
           <hr className="my-2 border-blue-gray-50" />
-          <ul className='my-4 w-full'>
-            <Link to='/Howitworks'>
-            <li>How it works</li>
-            </Link>
-            <Link to='/About'>
-              <li className='w-full'>About us</li>
-            </Link>
-            <Link to='/Testimonials'>
-              <li className='w-full'>Testimonials</li>
-            </Link>
-            <Link to='/Contacts' >
-              <li className=' w-full'>Contacts</li>
-            </Link>
+          <ul className='my-4 w-full p-3'>
+            <li>
+              <Typography
+                as="a"
+                href="#howitworks"
+                color="blue-gray"
+                className="font-normal block mb-2 text-gray-500 text-sm transition-colors hover:text-orange-500 focus:text-orangee-500 decoration-slate-400"
+              >
+                How it works
+              </Typography>
+              
+            </li>
+            <li>
+              <Typography
+                as="a"
+                  href="#about"
+                  color="blue-gray"
+                  className="font-normal block mb-2 text-gray-500 text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+              >
+                About us
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                as="a"
+                href="#testimonials"
+                color="blue-gray"
+                className="font-normal block mb-2 text-gray-500 text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+              >
+                Testimonials
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                as="a"
+                href="#contacts"
+                color="blue-gray"
+                className="font-normal block  text-gray-500 text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+              >
+                Contacts
+              </Typography>
+            </li>
               
           </ul>   
           <hr className="my-2 border-blue-gray-50" /> 
         
-          <div className='flex   my-4  '> 
+          <div className='flex   my-4 p-2 '> 
             <NavLink to='/' className=' '>
               <button className='border-none bg-transparent mr-4 py-3'>
                 <img src={appstore} alt="" />

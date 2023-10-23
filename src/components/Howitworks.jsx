@@ -13,7 +13,7 @@ const Howitworks = () => {
   };
 
   return (
-    <div id='howitworks ' className="lg:p-20">
+    <div id='howitworks' className="lg:p-20">
       <div className="text-center ">
         <h1 className="font-extrabold text-4xl ">How it Works</h1>
         <p className="text-gray-400 text-sm">
