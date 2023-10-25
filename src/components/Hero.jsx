@@ -72,7 +72,7 @@ const Hero = () => {
               <h1 className="max-w-xl text-2xl text-start font-extrabold leading-none  lg:text-5xl lg:text-left lg:leading-tight pb-5">
                 Quickest Route to Connect with Sellers and Service Providers
               </h1>
-              <Typography variant="p" className=" text-sm font-thin  text-gray-500 lg:text-left lg:max-w-md pb-5">
+              <Typography variant="p" className="  text-gray-700 lg:text-left lg:max-w-md pb-5">
                 Are you in the market for a specific product or service, but don't
                 know where to start looking?InsideMarket is here to simplify your
                 search and make your buying and service-seeking experience hassle-free.
@@ -100,7 +100,7 @@ const Hero = () => {
               <h1 className="max-w-xl text-2xl font-extrabold leading-none lg:text-5xl lg:text-left lg:leading-tight pb-5">
                 Connect with customers, increase your profits
               </h1>
-              <Typography variant="p text-sm text-gray-500">
+              <Typography variant="p"className="  text-gray-700">
                 InsideMarket is your go-to destination to find ready-to-buy,
                 Ready-to-pay customers for your product or service. Install the
                 app to get started!

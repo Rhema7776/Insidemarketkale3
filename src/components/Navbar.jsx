@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from '../images/Frame 1000001585.png' 
+import logo from '../images/Frame 1000001585.svg' 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import {NavLink} from 'react-router-dom';
 import appstore from '../images/Mobile app store badge.png';

@@ -27,14 +27,14 @@ const divStyle = {
 }
 const slideImages = [
   {
-    url: require('../images/Image.png'),
+    url: require('../images/Content.png'),
     caption: 'Insidemarket really helped us find what we were looking for quickly',
     fullname : 'Emmanuella Jones',
     location : 'Akure',
     stars: '⭐⭐⭐⭐⭐',
   },
   {
-    url: require('../images/shake.jpg'),
+    url: require('../images/Content.png'),
     caption: "Insidemarket really makes for comfortable trading. I've experienced it firsthand",
     fullname : 'Rhema Chukwumah',
     location : 'Lagos',
