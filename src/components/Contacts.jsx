@@ -61,9 +61,9 @@ const Contacts = () => {
     } else if(!/^\d{10}$/.test(formData.phone)){
       validationErrors.phone = "Phone number is not valid make sure you input the last 10 digits "
     }
-    if(!formData.agreement.trim()){
-      validationErrors.agreement = "Do you agree with our terms?"
-    }
+    // if(!formData.agreement.trim()){
+    //   validationErrors.agreement = "Do you agree with our terms?"
+    // }
     
     if (Object.keys(validationErrors).length === 0)  {
       alert("Form Submitted successfully")
@@ -262,7 +262,7 @@ const Contacts = () => {
               containerProps={{ className: "pr-3"  }}
             />
             <br />
-            {errors.agreement && <span className="text-red-500 text-extrabold">{errors.agreement}</span>}
+           
             <Button type='submit' onClick={handleSubmit}   className="mt-6 capitalize bg-orange-500" fullWidth>
               Send message
             </Button> 
