@@ -8,6 +8,8 @@ import {Testimonials} from '../components/Testimonials'
 import About from '../components/About';
 import Ourgoal from '../components/Ourgoal';
 import FindWhat from '../components/FindWhat';
+import  CarouselItem1  from '../components/CarouselItem1'
+
 
 export default function Home() {
 
@@ -21,10 +23,10 @@ export default function Home() {
       <About/>
       <Ourgoal/>
       <Howitworks/>
+      
       <FindWhat />
       <Contacts/>
-      
-      {/* <Testimonials/> */}
+     
       <Footer />
     </>
   )

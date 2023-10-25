@@ -1,17 +1,23 @@
 import React from 'react';
-import Emmanuella from '../images/Image.png';
+
 import { Link } from 'react-router-dom';
 import appstore from "../images/Mobile app store badge.png";
 import playstore from "../images/Mobile app store badge (1).png";
 import { Typography } from '@material-tailwind/react';
-
+import CarouselItem1 from './CarouselItem1';
 
 
 const FindWhat = () => {
   return (
-    <div className='xs:max-lg:px-3 '>
-      <div className=' grid md:grid-cols-2 gap-8 container mx-auto  '>
-        <img src={Emmanuella} alt="" className='lg:w1/2 ' />
+    <div className='xs:max-lg:px-3   ' id='testimonials'>
+     
+      <div className='grid md:grid-cols-2 gap-8 container mx-auto   '>
+     
+          <div className='overflow-x-hidden items-center w-full '>
+           <CarouselItem1 className="w-full   " />
+          </div>
+         
+        
         <div className='flex items-center lg:w1/2'>
             
           <div>

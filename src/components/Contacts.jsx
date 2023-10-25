@@ -30,8 +30,8 @@ const Contacts = () => {
  
 
   return (
-    <div id="contacts" className="bg-gray-100 py-20 ">
-      <div className="container grid md:grid-cols-2   mx-auto flex-col gap-4 ">
+    <div id="contacts" className="bg-gray-100 py-20  ">
+      <div className="container grid md:grid-cols-2 md:max-lg:px-3  mx-auto flex-col gap-4 ">
         <div color="transparent" shadow={false} className="lg:w-96  mt-5 xs:max-lg:px-3">
           <Typography className="font-bold text-sm text-orange-500 ">
             Contact us
