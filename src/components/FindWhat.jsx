@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import appstore from "../images/Mobile app store badge.png";
-import playstore from "../images/Mobile app store badge (1).png";
+import appstore from "../images/Mobile app store badge.svg";
+import playstore from "../images/Mobile app store badge (1).svg";
 import { Typography } from '@material-tailwind/react';
 import CarouselItem1 from './CarouselItem1';
 

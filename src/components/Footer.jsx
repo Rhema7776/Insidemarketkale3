@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from "../images/Frame 1000001585.svg"
 import { Typography } from '@material-tailwind/react';
-import appstore from '../images/Mobile app store badge.png';
-import playstore from '../images/Mobile app store badge (1).png';
+import appstore from '../images/Mobile app store badge.svg';
+import playstore from '../images/Mobile app store badge (1).svg';
 
 
 const Footer = () => {
@@ -93,7 +93,7 @@ const Footer = () => {
                 <div className="  xs:max-lg:flex xs:max-lg:gap-2">
                   <Typography as="a" href="#" className="block mb-2">
                     <button className="border-none w-full ">
-                      <img src={appstore} alt="" className='w-full'/>
+                        <img src={appstore} alt="" className='w-full'/>
                     </button>
                   </Typography>
                   <Typography as="a" href=''>

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import {Typography } from "@material-tailwind/react";
 import iphone1 from "../images/Content (1).png";
 import iphone2 from "../images/Content (2).png";
-import playstore from "../images/Mobile app store badge.png";
-import appstore from "../images/Mobile app store badge (1).png";
+import playstore from "../images/Mobile app store badge.svg";
+import appstore from "../images/Mobile app store badge (1).svg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -85,7 +85,7 @@ const Hero = () => {
                 </Link>
                 <Link to="/">
                   <button className="">
-                  <img src={playstore} alt="" />
+                    <img src={playstore} alt="" />
                   </button>
                 </Link>
               </div>              

@@ -1,8 +1,8 @@
 import React from "react";
 import ladyholdsphone from "../images/Content.png";
 import { Link } from "react-router-dom";
-import playstore from "../images/Mobile app store badge (1).png";
-import appstore from "../images/Mobile app store badge.png";
+import playstore from "../images/Mobile app store badge (1).svg";
+import appstore from "../images/Mobile app store badge.svg";
 
 const About = () => {
   return (

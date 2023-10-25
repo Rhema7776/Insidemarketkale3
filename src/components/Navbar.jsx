@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import logo from '../images/Frame 1000001585.svg' 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import {NavLink} from 'react-router-dom';
-import appstore from '../images/Mobile app store badge.png';
-import playstore from '../images/Mobile app store badge (1).png';
+import appstore from '../images/Mobile app store badge.svg';
+import playstore from '../images/Mobile app store badge (1).svg';
 import { Typography } from '@material-tailwind/react';
 
 
@@ -73,6 +73,7 @@ const Navbar = () => {
                 <NavLink to='/' className=' '>
                   <button className='border-none bg-transparent mr-4 py-3'>
                     <img src={appstore} alt="" />
+                    
                   </button>
                 </ NavLink>
                 <NavLink to='/'>
