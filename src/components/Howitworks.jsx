@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import {Typography } from "@material-tailwind/react";
-import iphone1 from "../images/Content (7).png";
-import iphone2 from "../images/Content (4).png";
-import iphone3 from "../images/Content (5).png";
+import iphone1 from "../images/Content.svg";
+import iphone2 from "../images/Content (4).svg";
+import iphone3 from "../images/Content (5).svg";
 
 const Howitworks = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -20,7 +20,7 @@ const Howitworks = () => {
           Think of it as twitter for e-commerce 
         </Typography> 
       </div> 
-      <div className="container mx-auto mt-7 flex flex-wrap-reverse  justify-center xs:max-lg:px-3 ">
+      <div className="container mx-auto mt-7  flex flex-col-reverse justify-center xs:max-lg:px-3 ">
       <div
     
       className="bloc-tabs grid mt-12   md:grid-cols-3 mx-auto flex-col justify-center border-white-500 border-t-2 ">
@@ -64,7 +64,7 @@ const Howitworks = () => {
             </div>
         </div>
 
-      <div className="content-tabs  items-center ">
+      <div className="content-tabs flex justify-center items-center  ">
         <div
           className={
             toggleState === 1
@@ -72,7 +72,7 @@ const Howitworks = () => {
               : "content text-center items-center  "
           }
         >
-          <img  src={iphone1} alt="" />
+          <img className="" src={iphone1} alt="" />
         </div>
         <div
           className={toggleState === 2 ? "content active-content" : "content items-center "}

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/Frame 1000001585.svg"
+import logo from "../images/TwerceLogoText.png"
 import { Typography } from '@material-tailwind/react';
 import appstore from '../images/Mobile app store badge.svg';
 import playstore from '../images/Mobile app store badge (1).svg';
@@ -13,7 +13,7 @@ const Footer = () => {
             
           <div className='flex flex-wrap justify-between'>
             <div className=' xs:max-lg:mb-5 block'>
-              <img src={logo} alt="" className='mb-5 block' />
+              <img src={logo} alt="" className='mb-5 block w-12' />
               <Typography className='text-sm text-gray-500 mb-5 block'>
                 Your Personalized E-Commerce Experience
               </Typography>
@@ -74,7 +74,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className='flex flex-wrap-reverse gap-10 text-gray-500 '>
+            <div className='flex flex-wrap-reverse  gap-10 text-gray-500 '>
               <div className=''>
                 <Typography
                   as="" className='font-bold text-sm text-orange-500 mb-3 block'>Contact us here

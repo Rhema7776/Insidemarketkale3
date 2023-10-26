@@ -13,9 +13,8 @@ import {
   
 
 } from "@material-tailwind/react";
-import phone from "../images/Icon (1).png";
+import phone from "../images/phone.svg";
 import mail from "../images/Icon.png";
-import { useForm } from "react-hook-form";
 
 const Contacts = () => {
 
@@ -115,7 +114,7 @@ const Contacts = () => {
           </div>
         </div>
 
-        <div className=" container mx-auto ">
+        <div className=" container mx-auto flex justify-end">
           <form  action="" className=" mt-8 mb-2  max-w-screen-lg  bg-white p-5 rounded-lg xs:max-lg:px-3 ">
             <div className="mb-1 flex flex-wrap gap-6">
               <Typography variant="h6" color="blue-gray" className="-mb-3">

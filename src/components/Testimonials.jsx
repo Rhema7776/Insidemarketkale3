@@ -1,90 +1,55 @@
+import React from 'react';
 
-import React, { useState } from "react";
-
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-  
-} from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
+import appstore from "../images/Mobile app store badge.svg";
+import playstore from "../images/Mobile app store badge (1).svg";
+import { Typography } from '@material-tailwind/react';
+import CarouselItem1 from './CarouselItem1';
 
 
-export function Testimonials() {
-  const [activeTab, setActiveTab] = React.useState("html");
-  const data = [
-    {
-      label: "",
-      value: "html",
-      Header: "Post your Requests",
-      desc: `Post what you want to buy, whether in text, images or voice`,
-      img: require("../images/Content (3).png")
-    },
-    {
-      label: "",
-      value: "react",
-      Header: "Sellers Respond with Offers",
-      desc: `Within minutes, sellers Respond to your posts and give you offers `,
-      img: require("../images/Content (4).png")
-    },
-    {
-        label: "",
-        value: "react",
-        Header: "Choose your seller and buy",
-        desc: `Connect with your chosen seller, chat, negotiate, and finalize deals within the app`,
-        img: require("../images/Content (5).png")
-    }
-  ];
+const FindWhat = () => {
   return (
-    <Tabs value={activeTab} className="grid  md:grid-cols-2  flex-col items-center px-12 bg-blue-500">
-
-        <div className="bg-red-300 ">
-            <TabsHeader
-                className=" rounded-none border-b border-blue-gray-50 bg-green-200  items-start p-0"
-                indicatorProps={{
-                className:
-                    "shadow-none rounded-none  ",
-                }}
-            >
-                {data.map(({ label, value }) => (
-                <Tab
-                    key={value}
-                    value={value}
-                    onClick={() => setActiveTab(value)}
-                    className={ 
-                    activeTab === value
-                        ? "text-gray-900   border-orange-500 border-b-2 "
-                        : ""
-                    }
-                >
-                    <p className="capitalize">{label}</p>
-                </Tab>
-                ))}
-            </TabsHeader>
+    <div className='xs:max-lg:px-3   ' id='testimonials'>
+     
+      <div className='grid md:grid-cols-2 gap-8 container mx-auto   '>
+     
+          <div className='overflow-x-hidden items-center w-full '>
+           <CarouselItem1 className="w-full   " />
+          </div>
+         
+        
+        <div className='flex justify-end items-center lg:w1/2'>
             
-            <TabsBody>
-                {data.map(({ value, desc, Header}) => (
-                <TabPanel key={value} value={value}>
-                    <h1 className="text-4xl font-extrabold">{Header}</h1>
-                    <p>{desc}</p>
-
-                </TabPanel>
-                ))}
-            </TabsBody>
+          <div>
+            <div className='items-center'>
+              <Typography className="font-bold  text-4xl ">
+                Find what you need on InsideMarket
+              </Typography>
+              <Typography className='text-sm mt-4 text-gray-500'>
+               Get connected to sellers and providers and buy whatever you want
+              </Typography>
+            </div>
+            
+              
+            <div className='flex   my-4  '> 
+              <Link to='/' className=' '>
+                <button className='border-none bg-transparent mr-4 py-3'>
+                  <img src={appstore} alt="" />
+                </button>
+              </Link>
+              <Link to='/'>
+              <button className=' py-3'>
+                  <img src={playstore} alt="" />
+              </button>
+              </Link>
+                
+            </div>   
+          </div>  
+            
         </div>
-      
-        <TabsBody className="bg-cyan-200">
-            {data.map(({ value, desc, Header, img}) => (
-            <TabPanel key={value} value={value}>
-                <img  src={img} alt="" className=""/>
-            </TabPanel>
-            ))}
-        </TabsBody>
-      
-    </Tabs>
-  );
+      </div>
+    </div>
+  )
 }
 
-
-
+export default FindWhat

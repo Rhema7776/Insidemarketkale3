@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from '../images/Frame 1000001585.svg' 
+import logo from '../images/TwerceLogoText.png' 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import {NavLink} from 'react-router-dom';
 import appstore from '../images/Mobile app store badge.svg';
@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className=' md:flex md:justify-between md:items-center  w-full'>
       <div className=' flex justify-between items-center   h-full w-full '>
             <div className=' items-center'>
-             <img src={logo} alt="" className='xs:ml-3 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 3xl:ml-0' />          
+             <img src={logo} alt="" className='xs:ml-3 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 3xl:ml-0 w-12' />          
             </div>
             <ul className='hidden xs:max-lg:w-80    md:flex justify-between  w-96 text-sm'>
            

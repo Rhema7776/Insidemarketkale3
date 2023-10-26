@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Typography } from "@material-tailwind/react";
-import iphone1 from "../images/Content (1).png";
+import iphone1 from "../images/Content (2).svg";
 import iphone2 from "../images/Content (2).png";
 import playstore from "../images/Mobile app store badge.svg";
 import appstore from "../images/Mobile app store badge (1).svg";
@@ -14,28 +14,12 @@ const Hero = () => {
   };
 
  
-  const data = [
-    {
-      label: "",
-      value: "html",
-      Header: "For buyers",
-      desc: `Post what you want to buy, whether in text, images or voice`,
-      img: require("../images/Content (3).png")
-    },
-    {
-      label: "",
-      value: "react",
-      Header: "For sellers and service providers",
-      desc: `Within minutes, sellers Respond to your posts and give you offers `,
-      img: require("../images/Content (4).png")
-    },
-    
-  ];
+  
 
   return (
     <div id="" className="py-13">
       <div className="container mx-auto grid    md:grid-cols-2 flex-col justify-between  xs:max-lg:px-3  ">
-        <div className="">
+        <div className=" ">
          
           <div className=" border-b-2 mt-20  flex flex-wrap   border-white-500 xs:max-sm:max-w-[90%] sm:max-md:max-w-[43%] md:max-lg:max-w-[72%] lg:max-xl:max-w-[60%] xl:max-w-[48%] pb-3">
             <div
@@ -124,22 +108,23 @@ const Hero = () => {
         </div>
 
         
-        <div className="content-tab  items-center ">
-        <div
-          className={
-            toggleState === 1
-              ? "content active-content border-orange-500 border-t-6 "
-              : "content "
-          }
-        >
-          <img  src={iphone1} alt="" className="w-full " />
+        <div className="content-tab flex justify-end ">
+          <div
+            className={
+              toggleState === 1
+                ? "content active-content "
+                : "content "
+            }
+          >
+            <img  src={iphone1} alt="" className="" />
+          </div>
+          <div
+            className={toggleState === 2 ? "content active-content  " : "content   "}
+          >
+            <img src={iphone2} alt="" className="" />
+          </div>
+        
         </div>
-        <div
-          className={toggleState === 2 ? "content active-content  " : "content   "}
-        >
-          <img src={iphone2} alt="" className="w-full" />
-        </div>
-      </div>
       </div>
     </div>
   );

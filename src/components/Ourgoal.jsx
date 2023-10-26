@@ -1,5 +1,5 @@
 import React from "react";
-import featuredicon from "../images/Featured icon.png";
+import featuredicon from "../images/Featured icon.svg";
 
 
 const Ourgoal = () => {
