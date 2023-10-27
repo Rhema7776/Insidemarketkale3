@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className=' items-center'>
              <img src={logo} alt="" className='xs:ml-3 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 3xl:ml-0 w-12' />          
             </div>
-            <ul className='hidden xs:max-lg:w-80    md:flex justify-between  w-96 text-sm text-gray-700'>
+            <ul className='hidden xs:max-md:w-80 md:max-lg:w-96    md:flex justify-between  w-96 text-sm text-gray-700'>
            
               <li>
                   <Typography
