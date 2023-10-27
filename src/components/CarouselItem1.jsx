@@ -57,10 +57,10 @@ const properties = {
     </button>
   ),
   nextArrow: (
-    <button style={{ ...buttonStyle }} className=" ">
+    <button style={{ ...buttonStyle }} className="mt-80 mr-4 ">
       <BsArrowRightCircle
         size={40}
-        className="bg-white rounded-full text-orange-500 mt-80 mr-4 "
+        className="bg-white rounded-full text-orange-500  "
       />
     </button>
   ),

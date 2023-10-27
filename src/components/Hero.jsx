@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="container mx-auto grid    md:grid-cols-2 flex-col justify-between  xs:max-lg:px-3  ">
         <div className=" ">
          
-          <div className=" border-b-2 mt-20  flex flex-wrap   border-white-500 xs:max-sm:max-w-[90%] sm:max-md:max-w-[43%] md:max-lg:max-w-[72%] lg:max-xl:max-w-[60%] xl:max-w-[48%] pb-3">
+          <div className=" border-b-2 mt-20  flex   border-white-500 xs:max-sm:max-w-[92%] sm:max-md:max-w-[44%] md:max-lg:max-w-[73%] lg:max-xl:max-w-[61%] xl:max-2xl:max-w-[49%] 2xl:max-3xl:max-w-[41%] 3xl:max-w-[23%] pb-3">
             <div
               className={
                 toggleState === 1
@@ -53,7 +53,7 @@ const Hero = () => {
                   : "content items-center  "
               }
             >
-              <h1 className="max-w-xl text-2xl text-start font-extrabold leading-none  lg:text-5xl lg:text-left lg:leading-tight pb-5">
+              <h1 className="max-w-xl text-2xl text-start font-bold leading-none  lg:text-5xl lg:text-left lg:leading-tight pb-5">
                 Quickest Route to Connect with Sellers and Service Providers
               </h1>
               <Typography variant="p" className="  text-gray-700 lg:text-left lg:max-w-md pb-5">
@@ -81,7 +81,7 @@ const Hero = () => {
                   : "content items-center "
               }
             >
-              <h1 className="max-w-xl text-2xl font-extrabold leading-none lg:text-5xl lg:text-left lg:leading-tight pb-5">
+              <h1 className="max-w-xl text-2xl font-bold leading-none lg:text-5xl lg:text-left lg:leading-tight pb-5">
                 Connect with customers, increase your profits
               </h1>
               <Typography variant="p"className="  text-gray-700">

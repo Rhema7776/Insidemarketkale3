@@ -23,14 +23,14 @@ const Navbar = () => {
             <div className=' items-center'>
              <img src={logo} alt="" className='xs:ml-3 sm:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 3xl:ml-0 w-12' />          
             </div>
-            <ul className='hidden xs:max-lg:w-80    md:flex justify-between  w-96 text-sm'>
+            <ul className='hidden xs:max-lg:w-80    md:flex justify-between  w-96 text-sm text-gray-700'>
            
               <li>
                   <Typography
                     as="a"
                     href="#howitworks"
-                    color="blue-gray"
-                    className="font-normal text-sm transition-colors hover:text-orange-500 focus:text-orangee-500 decoration-slate-400"
+                    color=""
+                    className="font-normal text-lg transition-colors hover:text-orange-500 focus:text-orangee-500 decoration-slate-400"
                     
                   >
                     How it works
@@ -40,8 +40,8 @@ const Navbar = () => {
                   <Typography
                     as="a"
                     href="#about"
-                    color="blue-gray"
-                    className="font-normal text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+                    color=""
+                    className="font-normal text-lg  transition-colors hover:text-orange-500 focus:text-orange-500"
                   >
                     About us
                   </Typography>
@@ -50,8 +50,8 @@ const Navbar = () => {
                   <Typography
                     as="a"
                     href="#testimonials"
-                    color="blue-gray"
-                    className="font-normal text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+                    color=""
+                    className="font-normal text-lg  transition-colors hover:text-orange-500 focus:text-orange-500"
                   >
                     Testimonials
                   </Typography>
@@ -60,8 +60,8 @@ const Navbar = () => {
                   <Typography
                     as="a"
                     href="#contacts"
-                    color="blue-gray"
-                    className="font-normal text-sm  transition-colors hover:text-orange-500 focus:text-orange-500"
+                    color=""
+                    className="font-normal text-lg  transition-colors hover:text-orange-500 focus:text-orange-500"
                   >
                     Contacts
                   </Typography>

@@ -9,7 +9,7 @@ import CarouselItem1 from './CarouselItem1';
 
 const FindWhat = () => {
   return (
-    <div className='xs:max-lg:px-3   ' id='testimonials'>
+    <div className='xs:max-lg:px-3' id='testimonials'>
      
       <div className='grid md:grid-cols-2 gap-8 container mx-auto   '>
      

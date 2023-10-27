@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div id="about" className="container mx-auto mt-5 xs:max-lg:px-3 ">
       <div className="">
-        <h1 className="font-extrabold text-4xl ">
+        <h1 className="font-bold text-4xl ">
           Welcome to InsideMarket: Your Personalized <br /> E-Commerce
           Experience
         </h1>
@@ -19,22 +19,22 @@ const About = () => {
       <div className=" mt-10 grid md:grid-cols-2 gap-4 mx-auto flex-col">
         <div className="">
           <div className="lg:mt-0 mt-3 text-gray-700  ">
-            <h1 className=" mb-2 block text-black font-extrabold">Customize your requests</h1>
-            <p className="font-thin text-xs">
+            <h1 className=" mb-2 block text-black font-bold">Customize your requests</h1>
+            <p className=" text-sm">
               Tailor your requests with specific details to ensure you get
               exactly what you want.
             </p>
           </div>
           <div className="mt-3 text-gray-700">
-            <h1 className=" mb-2 block text-black font-extrabold">Get access to a wide range of sellers and service providers</h1>
-            <p className="  font-thin text-xs">
+            <h1 className=" mb-2 block text-black font-bold">Get access to a wide range of sellers and service providers</h1>
+            <p className="   text-sm">
               With a growing community of sellers and service providers,
               InsideMarket gives you access to a wide range of offerings.
             </p>
           </div>
           <div className="mt-3  text-gray-700 ">
-            <h1 className="mb-2 block text-black font-extrabold">Safety and Security</h1>
-            <p className="font-thin text-xs">
+            <h1 className="mb-2 block text-black font-bold">Safety and Security</h1>
+            <p className="text-sm">
               We prioritize your safety and privacy, implementing robust
               measures to verify our sellers and protect your information.
             </p>

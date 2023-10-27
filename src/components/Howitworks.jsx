@@ -15,8 +15,8 @@ const Howitworks = () => {
   return (
     <div id='howitworks' className="py-20">
       <div className="text-center ">
-        <h1 className="font-extrabold text-4xl ">How it Works</h1>
-        <Typography className="text-gray-400 text-sm">
+        <h1 className="font-bold text-4xl ">How it Works</h1>
+        <Typography className="text-gray-600 text-sm">
           Think of it as twitter for e-commerce 
         </Typography> 
       </div> 
@@ -33,7 +33,7 @@ const Howitworks = () => {
             onMouseEnter={() => toggleTab(1)}
             >
             <h1 className="font-bold">Post your requests</h1>
-            <Typography className="font-thin text-sm text-gray-500 max-w-md">Post what you want to buy, whether in text, images or voice.</Typography>
+            <Typography className="font-thin text-sm text-gray-600 max-w-md">Post what you want to buy, whether in text, images or voice.</Typography>
             </div>
             <div
             className={
@@ -44,7 +44,7 @@ const Howitworks = () => {
             onMouseEnter={() => toggleTab(2)}
             >
             <h1 className="font-bold">Sellers Respond with Offers</h1>
-            <Typography className="font-thin text-sm text-gray-500">
+            <Typography className="font-thin text-sm text-gray-600">
                 Within minutes, sellers Respond to your posts and give you offers.
             </Typography>
             </div>
@@ -57,7 +57,7 @@ const Howitworks = () => {
             onMouseEnter={() => toggleTab(3)}
             >
             <h1 className="font-bold">Choose your seller and buy</h1>
-            <Typography className="font-thin text-sm text-gray-500">
+            <Typography className="font-thin text-sm text-gray-600">
                 Connect with your chosen seller, chat, negotiate, and finalize deals
                 within the app.
             </Typography>
